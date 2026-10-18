@@ -1,0 +1,1035 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: white;
+}
+
+.nav-bar{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0px 20px;
+    top:0px;
+    left:0px;
+    right:0px;
+    position: fixed;
+    z-index: 1000;
+    background: white;
+  
+   
+    
+
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.menubar{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    font-size: 1.4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 4px;
+    cursor: pointer;
+}
+
+.nav-logo{
+    height:50px;
+    width:100px;
+    
+    
+    
+   
+  
+}
+
+.logo{
+    background-image: url(youtube2.jpg);
+    height: 50px;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+     cursor: pointer;
+    
+    
+
+    
+
+
+
+}
+
+.nav-center{
+
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+
+.nav-search{
+   margin-left:15px;
+    display:flex;
+    height:45px;
+    width:650px;
+   
+    
+    justify-content: space-evenly;
+}
+.search-input{
+    width:100%;
+    font-size: 1rem;
+    padding-left: 20px;
+    
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+     
+}
+
+.search-icon{
+    height:45px;
+    width: 80px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    border:  #6c696942 1.5px solid;
+
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+     cursor: pointer;
+}
+
+.border3{
+     border:  #8a8a8a42 1.5px solid;
+}
+.border3:focus{
+    outline: none;
+    border:solid 1.5px rgb(30, 153, 215)
+}
+
+
+.nav-mick{
+    height:45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+     margin-left:15px;
+     padding-bottom: 2px;
+       border-radius: 50%; 
+
+      
+     
+
+}
+.border2{
+      background-color: rgb(239, 234, 234);
+}
+.border2:hover{
+    background-color: #cdc5c5;
+}
+
+
+.mick-logo{
+    height:45px;
+    width:45px;
+           border-radius: 50%; 
+            cursor: pointer;
+         
+ 
+  
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 1.5rem;
+
+}
+
+.nav-bell{
+    margin-top: 13px;
+    height:40px;
+    width:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    border-radius: 50%;
+     cursor: pointer;
+}
+
+.nav-account{
+    height:50px;
+    width:50px;
+   
+    padding-top:13px;
+
+}
+
+.account{
+
+    height:35px;
+    width:35px;
+    background-color: rgb(137, 7, 28);
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+     cursor: pointer;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.side-bar{
+    width:230px;
+   top:60px;
+    position: fixed;
+    left:0px;
+    height: calc(100vh - 60px);
+    background: white;
+    padding: 12px 0 24px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  
+  
+   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  
+    
+}
+
+.side-home{
+    width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+    gap:20px;
+      border-radius: 15px;
+    padding: 10px;
+     cursor: pointer;
+}
+.home-icon{
+    font-size: 1.4rem;
+ 
+}
+.home-text{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.side-shorts{
+        width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+    gap:20px;
+      border-radius: 15px;
+       cursor: pointer;
+    padding: 10px;
+        
+
+}
+
+.short-icon{
+    font-size: 1.4rem;
+     
+
+    
+
+
+}
+
+.short-text1{
+      font-size: 1.2rem;
+    color: black;
+}
+
+.border{
+    background-color: transparent;
+    
+ 
+}
+.border:hover{
+    background-color: #ece7e7;
+   
+}
+
+
+.side-subscription{
+     width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+    gap:20px;
+      border-radius: 15px;
+       cursor: pointer;
+    padding: 10px;
+
+
+}
+.subscription-icon{
+     font-size: 1.4rem;
+    
+}
+
+.subscription-text{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.you{
+
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width:200px;
+     cursor: pointer;
+    height:40px;
+
+}
+
+.you h4{
+    margin-top: 4px;
+    color: black;
+    
+}
+
+.side-history{
+     width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+    gap:20px;
+      border-radius: 15px;
+    padding: 10px;
+     cursor: pointer;
+}
+
+.history-icon{
+      font-size: 1.4rem;
+   
+}
+
+.history-text{
+
+      font-size: 1.2rem;
+    color: black;
+}
+
+.side-playlist{
+    width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+     cursor: pointer;
+    gap:14px;
+      border-radius: 15px;
+    padding: 10px;
+
+}
+
+.playlist-icon .material-symbols-outlined{
+    font-size: 35px; 
+
+}
+
+
+.playlist-text{
+      font-size: 1.2rem;
+    color: black;
+
+}
+
+.side-watchlater{
+       width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+    gap:23px;
+      border-radius: 15px;
+       cursor: pointer;
+    padding: 10px;
+
+}
+
+.watchlater-text{
+      font-size: 1.2rem;
+    color: black;
+
+}
+
+.watchlater-icon{
+    font-size:1.4rem;
+}
+
+.side-like{
+      width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+     cursor: pointer;
+    gap:23px;
+      border-radius: 15px;
+    padding: 10px;
+
+
+}
+
+.like-icon{
+    font-size:1.4rem;
+}
+
+.like-text{
+    
+    font-size: 1.2rem;
+    color: black;
+
+}
+
+.side-download{
+
+       width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+     cursor: pointer;
+    gap:23px;
+      border-radius: 15px;
+    padding: 10px;
+
+
+
+}
+
+.download-icon .material-symbols-outlined{
+    font-size:33px;
+}
+.download-text{
+    
+    font-size: 1.2rem;
+    color: black;
+
+}
+
+.side-more{
+    
+    padding-left: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width:200px;
+    height:40px;
+}
+
+.side-premium{
+
+        width:210px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+     cursor: pointer;
+    gap:23px;
+      border-radius: 15px;
+    padding: 10px;
+
+}
+
+.premium-photo{
+    background-image: url(youtubeboss.webp);
+    width:25px;
+    height:25px;
+    background-size: contain;
+     background-repeat: no-repeat;
+}
+.premium-text{
+     font-size: 1rem;
+    color: black;
+
+}
+.side-music{
+    
+        width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+     cursor: pointer;
+    gap:23px;
+      border-radius: 15px;
+    padding: 10px;
+
+
+}
+
+.music-photo{
+    background-image: url(youtubemusic.png);
+     width:25px;
+    height:25px;
+    background-size: contain;
+     background-repeat: no-repeat;
+
+}
+.music-text{
+      font-size: 1rem;
+    color: black;
+
+}
+
+.side-kids{
+    
+        width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+    gap:23px;
+     cursor: pointer;
+      border-radius: 15px;
+    padding: 10px;
+
+}
+
+.kids-photo{
+
+    background-image: url(youtubekids.jpg);
+     width:25px;
+    height:25px;
+    background-size: contain;
+     background-repeat: no-repeat;
+}
+kids-text{
+     font-size: 1rem;
+    color: black;
+
+}
+
+.side-explore{
+    
+    padding-left: 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width:200px;
+    height:40px;
+
+}
+
+.side-shopping{
+
+       width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+     cursor: pointer;
+    gap:23px;
+      border-radius: 15px;
+    padding: 10px;
+}
+
+.shopping-icon{
+     font-size:1.6rem;
+}
+
+.shopping-text{
+     
+    font-size: 1.2rem;
+    color: black;
+
+}
+
+.side-music{
+
+     width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+     cursor: pointer;
+    gap:23px;
+      border-radius: 15px;
+    padding: 10px;
+
+}
+
+.music-icon .material-symbols-outlined{
+    font-size:1.9rem;
+}
+
+.music-text{
+    font-size: 1.2rem;
+    color: black;
+
+}
+
+.side-movie{
+
+    
+     width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+     cursor: pointer;
+    color:black;
+    background-color: white;
+    gap:23px;
+      border-radius: 15px;
+    padding: 10px;
+
+
+}
+.movie-text{
+    font-size: 1.2rem;
+    color: black;
+
+}
+
+.movie-icon .material-symbols-outlined{
+    font-size: 1.9rem;
+}
+
+.side-showmore{
+
+      width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+     cursor: pointer;
+    gap:23px;
+      border-radius: 15px;
+    padding: 10px;
+
+}
+
+.showmore-text{
+    font-size: 1.2rem;
+    color: black;
+
+
+}
+.showmore-icon {
+      font-size: 1.4rem;
+}
+
+.side-flag{
+
+       width:200px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    color:black;
+    background-color: white;
+    gap:23px;
+     cursor: pointer;
+      border-radius: 15px;
+    padding: 10px;
+
+}
+.flag-text{
+     font-size: 1.2rem;
+    color: black;
+
+}
+.flag-icon{
+    font-size: 1.4rem;
+}
+
+.side-bar::-webkit-scrollbar{
+    width:6px;
+  
+}
+
+.side-bar::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: #909090;
+}
+
+.contant{
+  margin-left: 250px;
+  padding-top:60px;
+     
+
+     
+}
+
+.contant-name{
+    height:55px;
+    left: 250px;
+    top: 60px;
+    right:0;
+
+   
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background: white;
+    z-index: 999;
+
+    position: fixed; 
+  
+    right: 0;
+    padding: 0 20px;
+    white-space: nowrap;
+
+
+}
+.cat{
+      border: none;
+    background: #f2f2f2;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+   
+}
+
+.cat.active{
+    background-color: black;
+    color: white;
+}
+
+.arrow{
+    border-radius: 50%;
+    background: #f2f2f2;
+    height:35px;
+    width:35px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   
+    
+
+}
+
+.arrow:hover{
+    background-color: #b8b2b2;
+}
+
+.videos{
+ 
+  
+    display: flex; 
+    flex-wrap: nowrap; 
+    gap: 20px; 
+    padding: 20px; 
+    background: white;
+    padding-top:65px;
+    height: 350px;
+    width: calc(100vw - 250px);
+
+
+}
+
+.video{
+  
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    height: 300px;
+    
+    width: 400px;
+}
+.thumbnail{
+   
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px; 
+    position: relative;
+    width: 100%; 
+    height: 250px;
+ 
+}
+
+.duration{
+    position: absolute; 
+    right: 8px; 
+    bottom: 8px; 
+    background: rgba(0,0,0,0.85); 
+    color: white; 
+    font-size: 12px; 
+    padding: 3px 6px; 
+    border-radius: 4px;
+}
+
+.video-info{
+   display: flex; 
+   gap: 12px; 
+   margin-top: 12px;
+}
+
+.channel-logo{ 
+   
+    width: 36px; 
+    height: 36px; 
+    border-radius: 50%; 
+    background-size: cover;
+    
+   
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-weight: bold; 
+    flex-shrink: 0; 
+   
+}
+
+.video-text h4{
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 6px; 
+    color: #0f0f0f;
+     display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+.video-text p{
+    font-size: 13px; 
+    color: #606060; 
+    margin-bottom: 2px;
+}
+
+.thumb1{
+    background-image: url(image2.avif);
+}
+
+.thumb2{
+    background-image: url(image1.avif);
+}
+
+.thumb3{
+    background-image: url(image3.avif);
+}
+
+.logo1{
+    background-image: url(channellogo1.jpg);
+}
+.logo2{
+    background-image: url(channellogo3.jpg);
+}
+.logo3{
+    background-image: url(logo2.jpg);
+}
+
+.shorts{
+      display: flex; 
+    flex-wrap: nowrap; 
+    gap: 20px; 
+    padding: 20px; 
+    background: white;
+     width: calc(100vw - 250px);
+    height: 450px;
+    margin-top: 10px;
+}
+
+.short{
+      display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    
+    width: 230px;
+    height: 430px;
+}
+
+.shortthumb{
+     background-size: cover;
+    background-position: center;
+    border-radius: 12px; 
+    position: relative;
+    width: 100%; 
+    height: 350px;
+   
+
+}
+.short-info{ display: flex; 
+   gap: 12px; 
+   margin-top: 12px;
+ 
+}
+
+.short-text h4{
+    font-size: 15px;
+    line-height: 1.4;
+    margin-bottom: 6px; 
+    color: #0f0f0f;
+     display: -webkit-box; 
+    -webkit-line-clamp: 2; 
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+.short-text p{
+    font-size: 13px; 
+    color: #606060; 
+    margin-bottom: 2px;
+}
+
+.shortlogo{
+height:40px;
+width: 100%;
+display: flex;
+align-items: center;
+gap: 15px;
+margin-top: 50px;
+margin-left: 15px;
+}
+
+.logos{
+    height: 30px;
+    width: 30px;
+
+    background-image: url(shortesredlogo.webp);
+    background-size: cover;
+
+}
+
+.st1{
+     background-image: url(short1.avif);
+   
+}
+.st2{
+     background-image: url(short2.avif);
+   
+}
+.st3{
+     background-image: url(short3.avif);
+   
+}
+.st4{
+     background-image: url(short4.avif);
+   
+}
+.st5{
+     background-image: url(short5.avif);
+   
+}
+
+.thumb4{
+    background-image: url(image4.avif);
+}
+
+.thumb5{
+    background-image: url(image5.avif);
+}
+
+.thumb6{
+    background-image: url(image6.avif);
+}
+
+.logo4{
+    background-image: url(channellogo4.jpg);
+}
+.logo5{
+    background-image: url(channellogo5.jpg);
+}
+.logo6{
+    background-image: url(channellogo6.jpg);
+}
+
+
+
+.thumb7{
+    background-image: url(image2.avif);
+}
+
+.thumb8{
+    background-image: url(image1.avif);
+}
+
+.thumb9{
+    background-image: url(image3.avif);
+}
+
+.logo7{
+    background-image: url(channellogo1.jpg);
+}
+.logo8{
+    background-image: url(channellogo3.jpg);
+}
+.logo9{
+    background-image: url(logo2.jpg);
+}
+
+.side-footer{
+  padding:16px 12px;
+  margin-top:auto ;
+
+}
+
+.footer-text{
+      display: flex;
+  flex-wrap: wrap;
+  gap: 6px 10px;
+  margin-bottom: 12px;
+}
+
+.footer-text a{
+      color: #606060;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+
+.copyright{
+    color: #909090;
+  font-size: 12px;
+}
+
